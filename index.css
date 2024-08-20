@@ -1,0 +1,334 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+#main-logo {
+  height: 62px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  color: rgb(107, 114, 128);
+}
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 8px;
+  transition: all 0.3s linear;
+}
+nav a:hover {
+  color: black;
+}
+nav button {
+  border: none;
+  background: none;
+  border-radius: 15px;
+  padding: 7px 12px;
+  transition: all 0.3s linear;
+}
+nav button:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.signin-link {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 19px;
+}
+.register-link {
+  background-color: rgb(20, 176, 76);
+  color: white;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 19px;
+}
+.register-link:hover {
+  color: white;
+  filter: brightness(90%);
+}
+section{
+  padding: 0px 30px;
+}
+.glass-bg{
+  padding: 40px 30px 50px 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.54);
+  backdrop-filter: blur(5px);
+}
+.intro h1{
+  color: white;
+  margin-top: 70px;
+}
+.intro{
+  background-image: url("/images/eCitizen-hero-banner-7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#search{
+  background-color: white;
+  padding: 15px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+#search input{
+  border: none;
+  width: 100%;
+  margin-left: 12px;
+}
+#search input::placeholder{
+  font-size: 18px;
+  color: rgb(134,136,141);
+
+}
+#search ion-icon{
+  color: rgb(134,136,141);
+  font-size: 20px;
+}
+.services{
+  display: flex;
+  justify-content: space-evenly;
+}
+.services li{
+  flex: 1;
+}
+.services img{
+  display: flex;
+  margin: 0 auto;
+}
+.services a{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+}
+.cta .with-bg{
+  background-image: url("/images/banner-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.with-bg h2{
+  margin: 40px 30px;
+  color: white;
+}
+.cta .action{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0,0,0,0.575);
+  padding: 10px 20px;
+
+}
+.cta .action p{
+  color: white;
+  font-size: 22px;
+}
+.cta .action a{
+  margin-left: 20px;
+  text-decoration: none;
+}
+/* agencies section */
+.agencies .section-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+
+}
+.agencies .section-head h2{
+  font-size: 30px;
+  color: rgb(134,136,141);
+}
+.agencies .section-head a{
+  color: blue;
+  text-decoration: none;
+}
+.agencies .agencies-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.agencies .agencies-container > a{
+  border: 1px solid grey;
+  color: grey;
+  border-radius: 18px;
+  padding: 10px;
+  width: 30%;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  flex-grow: 1;
+}
+.agencies .agencies-container > a:hover{
+  background-color: aliceblue;
+
+}
+.agencies .item-header{
+  padding: 16px;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+.agencies .item-header img{
+  height: 40px;
+}
+.counties .counties-head h2{
+   color: gray;
+}
+.counties .counties-body {
+  display: flex;
+ /*  align-items: center; */
+
+  flex-wrap: wrap;
+  /* border-radius: 30px; */
+}
+.counties .counties-body :hover{
+  background-color: rgb(244, 246, 248);
+}
+.counties .counties-body > a{
+  color: gray;
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+  border: 1px solid grey;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  width: 30%;
+  flex-grow: 1;
+
+}
+.counties .counties-body h3{
+  font-size: 18px;
+  color: rgb(134,136,141);
+}
+.reasons > p {
+   width: 50%;
+}
+.reasons{
+  background-color: azure;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.reasons ul{
+  gap: 16px;
+}
+footer{
+  background-color: rgb(3, 32, 3);
+  color: white;
+  padding: 40px;
+}
+footer .upper{
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid wheat;
+  padding: 20px 0px;
+}
+footer .lower{
+  text-align: center;
+}
+footer a{
+  font-size: larger;
+}
+footer a:hover{
+ color: aliceblue;
+}
+
+@media (max-width: 1023px) {
+  .desktop-nav,
+  .user-nv{
+    display: none;
+  }
+  .action .user-nav{
+    display: flex;
+  }
+  .agencies .agencies-container > a{
+    flex-basis: 45%;
+  }
+  .counties .counties-body > a {
+    width:46% ;
+  }
+  .reasons ul{
+      flex-direction: column;
+      width: 45%;
+
+  }
+  footer .upper{
+    flex-direction: column;
+  }
+    
+
+}
+@media (max-width: 768px) {
+  .cta .action {
+    flex-direction: column;
+  }
+  .action .user-nav{
+     display: flex;
+  }
+  .cta h2 {
+    font-size: 18px;
+
+  }
+  .action .user-nav ul{
+    width: 100%;
+  }
+  .action .user-nav li a{
+    display: block;
+    text-align: center;
+    padding: 14px;
+    border-radius: 30px;
+  }
+  /* explore  */
+  /* the BEM methodology */
+}
+@media (max-width:540px) {
+  .services{
+    flex-wrap: wrap;
+    overflow-x: scroll;
+  }
+  .services li {
+    width: none;
+  }
+  /* hide scroll bar for chrome , safari and opera */
+  .services::-webkit-scrollbar {
+    display: none;
+  }
+ /*  hide scroll bar for IE ,edge, firefox */
+ .services {
+  -ms-overflow-style: none;
+   scrollbar-width: none;
+ }
+ .agencies .agencies-container > a{
+  flex-basis: 93%;
+}
+.counties .counties-body > a {
+  width:96% ;
+}
+.reasons ul{
+  flex-direction: column;
+  width: 100%;
+}
+ 
